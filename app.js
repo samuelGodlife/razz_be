@@ -3,7 +3,7 @@ const connectDB = require("./config/db");
 const bodyParser = require("body-parser");
 const db = require("./models");
 const PESANAN = db.pesanan;
-const uploadConfig = require("../backend/uploadConfig");
+const uploadConfig = require("./uploadConfig");
 const cors = require("cors");
 require("dotenv").config();
 
