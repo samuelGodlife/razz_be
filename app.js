@@ -53,6 +53,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.post("/uploadBukti", fields, async (req, res) => {
   try {
     const {
+      username,
       nama_lengkap,
       alamat,
       kota,
