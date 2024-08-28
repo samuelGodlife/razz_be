@@ -5,6 +5,7 @@ exports.createUser = async (req, res) => {
   console.log(req.body);
   try {
     const {
+      username,
       nama_lengkap,
       alamat,
       kota,
@@ -17,6 +18,7 @@ exports.createUser = async (req, res) => {
     } = req.body;
 
     const newUser = new pesanan({
+      username,
       nama_lengkap,
       alamat,
       kota,
