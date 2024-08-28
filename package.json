@@ -1,5 +1,5 @@
 {
-  "name": "backend_shaker",
+  "name": "backend",
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
@@ -8,7 +8,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "rafli",
+  "author": "mubado",
   "license": "ISC",
   "dependencies": {
     "bcryptjs": "^2.4.3",
