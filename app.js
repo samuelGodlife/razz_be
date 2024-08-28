@@ -66,8 +66,9 @@ app.post("/uploadBukti", fields, async (req, res) => {
       jumlahBaju,
       totalHarga,
     } = req.body;
-
+    console.log(req.body);
     const transaksi = new PESANAN({
+      username,
       nama_lengkap,
       noTelp,
       alamat,
