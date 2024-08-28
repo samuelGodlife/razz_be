@@ -79,8 +79,6 @@ exports.update = (req, res) => {
   console.log(req.params.id);
   const id = req.params.id;
 
-  req.body.tanggal_lahir = new Date(req.body.tanggal_lahir);
-
   mahasiswa
     .findByIdAndUpdate(id, req.body, { useFindAndModify: false })
     .then((data) => {
