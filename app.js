@@ -65,6 +65,7 @@ app.post("/uploadBukti", fields, async (req, res) => {
       jenis_kerah,
       jumlahBaju,
       totalHarga,
+      status,
     } = req.body;
     console.log(req.body);
     const transaksi = new PESANAN({
@@ -80,6 +81,7 @@ app.post("/uploadBukti", fields, async (req, res) => {
       jenis_kerah,
       jumlahBaju: parseInt(jumlahBaju),
       totalHarga: parseInt(totalHarga),
+      status,
       buktiTransfer: req.files.buktiTransfer
         ? req.files.buktiTransfer[0].filename
         : null,

@@ -78,13 +78,10 @@ exports.show = (req, res) => {
 exports.update = (req, res) => {
   console.log(req.params.id);
   const id = req.params.id;
-
+  console.log(req.body);
   mahasiswa
     .findByIdAndUpdate(id, req.body, { useFindAndModify: false })
     .then((data) => {
-      if (!data) {
-        res.status(404).send({ message: "Tidak dapat mengupdate data" });
-      }
       res.send({ message: "Data berhasil diupdate" });
     })
     .catch((err) => res.status(500).send({ message: err.message }));
