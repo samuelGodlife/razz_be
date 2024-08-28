@@ -1,6 +1,5 @@
 const db = require("../models");
 const mahasiswa = db.pesanan;
-const bcrypt = require("bcrypt");
 
 exports.createUser = async (req, res) => {
   console.log(req.body);
